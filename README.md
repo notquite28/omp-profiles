@@ -2,8 +2,8 @@
 
 Tiny installer for two manually switched Oh My Pi profiles:
 
-- `omp-codex` — locked to `openai-codex/gpt-5.5`
-- `omp-ave` — locked to `avemujicaapi/gpt-5.5`
+- `gpt` — locked to `openai-codex/gpt-5.5`
+- `ave` — locked to `avemujicaapi/gpt-5.5`
 
 No automatic fallback is configured. Use Codex until subscription usage runs out, then manually switch to Avemujica.
 
@@ -18,7 +18,7 @@ curl -fsSL https://raw.githubusercontent.com/notquite28/omp-profiles/main/instal
 After installing, start the Codex profile:
 
 ```bash
-omp-codex
+gpt
 ```
 
 Then run this inside OMP:
@@ -32,13 +32,13 @@ Then run this inside OMP:
 Use Codex subscription profile:
 
 ```bash
-omp-codex
+gpt
 ```
 
 Use Avemujica API-key profile:
 
 ```bash
-omp-ave
+ave
 ```
 
 ## What the installer creates
@@ -96,8 +96,8 @@ You can override names/models with environment variables:
 ```bash
 CODEX_PROFILE=codex \
 AVEMUJICA_PROFILE=ave \
-CODEX_ALIAS=omp-codex \
-AVEMUJICA_ALIAS=omp-ave \
+CODEX_ALIAS=gpt \
+AVEMUJICA_ALIAS=ave \
 CODEX_MODEL=openai-codex/gpt-5.5 \
 AVEMUJICA_MODEL=avemujicaapi/gpt-5.5 \
 curl -fsSL https://raw.githubusercontent.com/notquite28/omp-profiles/main/install.sh | bash

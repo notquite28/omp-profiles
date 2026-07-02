@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # Installs two locked OMP profiles:
-#   omp-codex -> openai-codex/gpt-5.5 only
-#   omp-ave   -> avemujicaapi/gpt-5.5 only
+#   gpt -> openai-codex/gpt-5.5 only
+#   ave -> avemujicaapi/gpt-5.5 only
 #
 # Usage:
 #   curl -fsSL <raw-url>/install.sh | bash
@@ -11,8 +11,8 @@ set -euo pipefail
 # Optional env overrides:
 #   CODEX_PROFILE=codex-chatgpt
 #   AVEMUJICA_PROFILE=avemujica-chatgpt
-#   CODEX_ALIAS=omp-codex
-#   AVEMUJICA_ALIAS=omp-ave
+#   CODEX_ALIAS=gpt
+#   AVEMUJICA_ALIAS=ave
 #   CODEX_MODEL=openai-codex/gpt-5.5
 #   AVEMUJICA_MODEL=avemujicaapi/gpt-5.5
 #   AVEMUJICA_API_KEY=...
@@ -20,8 +20,8 @@ set -euo pipefail
 
 CODEX_PROFILE="${CODEX_PROFILE:-codex-chatgpt}"
 AVEMUJICA_PROFILE="${AVEMUJICA_PROFILE:-avemujica-chatgpt}"
-CODEX_ALIAS="${CODEX_ALIAS:-omp-codex}"
-AVEMUJICA_ALIAS="${AVEMUJICA_ALIAS:-omp-ave}"
+CODEX_ALIAS="${CODEX_ALIAS:-gpt}"
+AVEMUJICA_ALIAS="${AVEMUJICA_ALIAS:-ave}"
 CODEX_MODEL="${CODEX_MODEL:-openai-codex/gpt-5.5}"
 AVEMUJICA_MODEL="${AVEMUJICA_MODEL:-avemujicaapi/gpt-5.5}"
 
